@@ -23,7 +23,7 @@ repo1.maven.org - http://repo1.maven.org/maven2/uk/codenestltd/mongfly
 
 Hopefully this thing is routinely green. Travis-CI monitors new code to this project and tests it on a variety of JDKs.
 
-[![Build Status](https://travis-ci.org/CodenestLtd/mongofly.svg?branch=master)](https://travis-ci.org/CodenestLtd/mongfly)
+[![Build Status](https://travis-ci.org/CodenestLtd/mongofly.svg?branch=master)](https://travis-ci.org/CodenestLtd/mongofly)
 
 ## License
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
