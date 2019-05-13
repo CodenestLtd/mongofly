@@ -1,10 +1,10 @@
-package uk.codenest.mongfly.validation;
+package uk.codenest.mongofly.validation;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.codenest.mongfly.entity.ChangeSet;
-import uk.codenest.mongfly.exception.ValidationException;
+import uk.codenest.mongofly.entity.ChangeSet;
+import uk.codenest.mongofly.exception.ValidationException;
 import org.testng.annotations.Test;
 
 public class DefaultChangeSetsValidatorTest {

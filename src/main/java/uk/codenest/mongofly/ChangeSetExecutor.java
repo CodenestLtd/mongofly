@@ -1,9 +1,9 @@
-package uk.codenest.mongfly;
+package uk.codenest.mongofly;
 
 import java.util.List;
 
-import uk.codenest.mongfly.entity.ChangeSet;
-import uk.codenest.mongfly.repository.MongoFlyRepository;
+import uk.codenest.mongofly.entity.ChangeSet;
+import uk.codenest.mongofly.repository.MongoFlyRepository;
 import com.mongodb.MongoClient;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +23,6 @@ public class ChangeSetExecutor {
     public void execute(final List<ChangeSet> changeSets) {
         changeSets.stream()
                 .forEach(changeSet -> {
-                    execute(changeSet);
                     if (!mongoFlyRepository.wasExecuted(changeSet)) {
                         execute(changeSet);
                         log.info("ChangeSet " + changeSet.getChangeId() + " has been executed");

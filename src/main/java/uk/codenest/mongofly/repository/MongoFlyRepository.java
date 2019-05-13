@@ -1,11 +1,11 @@
-package uk.codenest.mongfly.repository;
+package uk.codenest.mongofly.repository;
 
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import uk.codenest.mongfly.entity.ChangeSet;
+import uk.codenest.mongofly.entity.ChangeSet;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;

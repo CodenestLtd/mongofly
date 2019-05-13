@@ -1,4 +1,4 @@
-package uk.codenest.mongfly.reader;
+package uk.codenest.mongofly.reader;
 
 import java.io.File;
 import java.net.URISyntaxException;

@@ -1,6 +1,6 @@
-package uk.codenest.mongfly.entity;
+package uk.codenest.mongofly.entity;
 
-import uk.codenest.mongfly.repository.MongoFlyRepository;
+import uk.codenest.mongofly.repository.MongoFlyRepository;
 import lombok.Data;
 
 @Data

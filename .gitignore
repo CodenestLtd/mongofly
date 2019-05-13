@@ -24,7 +24,7 @@ bin
 target
 build/
 !build/reports
-.gradle
+.gradle/**
 
 # Eclipse Project Files #
 

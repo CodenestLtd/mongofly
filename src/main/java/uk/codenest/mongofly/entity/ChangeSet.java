@@ -1,4 +1,4 @@
-package uk.codenest.mongfly.entity;
+package uk.codenest.mongofly.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

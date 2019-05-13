@@ -1,4 +1,4 @@
-package uk.codenest.mongfly.reader;
+package uk.codenest.mongofly.reader;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,9 +6,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.regex.Pattern;
 
-import uk.codenest.mongfly.entity.ChangeSet;
-import uk.codenest.mongfly.entity.Script;
-import uk.codenest.mongfly.exception.ValidationException;
+import uk.codenest.mongofly.entity.ChangeSet;
+import uk.codenest.mongofly.entity.Script;
+import uk.codenest.mongofly.exception.ValidationException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

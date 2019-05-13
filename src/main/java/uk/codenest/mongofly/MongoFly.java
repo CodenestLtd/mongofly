@@ -1,15 +1,15 @@
-package uk.codenest.mongfly;
+package uk.codenest.mongofly;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import uk.codenest.mongfly.entity.ChangeSet;
-import uk.codenest.mongfly.reader.ChangeSetFileProvider;
-import uk.codenest.mongfly.reader.ChangeSetReader;
-import uk.codenest.mongfly.reader.ClasspathFileScanChangeSetFileProvider;
-import uk.codenest.mongfly.validation.ChangeSetsValidator;
-import uk.codenest.mongfly.validation.DefaultChangeSetsValidator;
+import uk.codenest.mongofly.entity.ChangeSet;
+import uk.codenest.mongofly.reader.ChangeSetFileProvider;
+import uk.codenest.mongofly.reader.ChangeSetReader;
+import uk.codenest.mongofly.reader.ClasspathFileScanChangeSetFileProvider;
+import uk.codenest.mongofly.validation.ChangeSetsValidator;
+import uk.codenest.mongofly.validation.DefaultChangeSetsValidator;
 import com.mongodb.MongoClient;
 import lombok.Setter;
 

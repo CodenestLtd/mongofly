@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import uk.codenest.mongfly.MongoFly;
+import uk.codenest.mongofly.MongoFly;
 
 @Slf4j
 @SpringBootApplication

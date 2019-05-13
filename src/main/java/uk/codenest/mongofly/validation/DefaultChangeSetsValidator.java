@@ -1,11 +1,11 @@
-package uk.codenest.mongfly.validation;
+package uk.codenest.mongofly.validation;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import uk.codenest.mongfly.entity.ChangeSet;
-import uk.codenest.mongfly.exception.ValidationException;
+import uk.codenest.mongofly.entity.ChangeSet;
+import uk.codenest.mongofly.exception.ValidationException;
 
 public class DefaultChangeSetsValidator implements ChangeSetsValidator {
 

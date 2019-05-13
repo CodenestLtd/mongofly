@@ -1,4 +1,4 @@
-package uk.codenest.mongfly;
+package uk.codenest.mongofly;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoWriteException;
