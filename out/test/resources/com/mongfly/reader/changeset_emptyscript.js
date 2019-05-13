@@ -1,0 +1,1 @@
+db.organization.update({Location : "NYC"}, {$set : {Location : "NY"}}, false, true);
