@@ -13,3 +13,32 @@ test-output
 *.ipr
 *.iws
 target/
+
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+
+# Build Files #
+
+bin
+target
+build/
+!build/reports
+.gradle
+
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
+.vscode
+
+# Test files
+*.xlsx
+*.zip
+accessingdataneo4j.db
+dependency-reduced-pom.xml
+out
+README.html

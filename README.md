@@ -5,7 +5,7 @@ MongFly allows you to manage changes of your mongo documents and propagate these
 ### Add MongFly to your project
 ```xml
 <dependency>
-    <groupId>com.mongfly</groupId>
+    <groupId>uk.codenest</groupId>
 	<artifactId>mongfly</artifactId>
 	<version>1.0.0</version>
 </dependency>
