@@ -7,7 +7,7 @@ MongFly allows you to manage changes of your mongo documents and propagate these
 <dependency>
     <groupId>uk.codenest</groupId>
 	<artifactId>mongfly</artifactId>
-	<version>1.0.0.RELEASE</version>
+	<version>1.0.2.RELEASE</version>
 </dependency>
 ```
 

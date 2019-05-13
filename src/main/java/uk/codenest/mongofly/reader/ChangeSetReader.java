@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ChangeSetReader {
 
-    private static final String FILE_PATTERN = "V[0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])-(2[0-3]|[01][0-9])[0-5][0-9]_([a-zA-Z0-9_-]){3,20}.js";
+    private static final String FILE_PATTERN = "V[0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])-(2[0-3]|[01][0-9])[0-5][0-9]_([a-zA-Z0-9_-]){3,100}.js";
     private static Pattern PATTERN = Pattern.compile(FILE_PATTERN);
 
     public ChangeSet getChangeSet(final File file) {

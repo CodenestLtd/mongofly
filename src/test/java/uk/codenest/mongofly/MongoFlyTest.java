@@ -31,12 +31,12 @@ public class MongoFlyTest {
 
         mongoFly.process();
 
-        assertEquals(mongoDatabase.getCollection("mongofly").count(), 3);
-        assertEquals(mongoDatabase.getCollection("organization").count(), 2);
-        assertEquals(mongoDatabase.getCollection("user").count(), 2);
+        assertEquals(mongoDatabase.getCollection("mongofly").countDocuments(), 3);
+        assertEquals(mongoDatabase.getCollection("organization").countDocuments(), 2);
+        assertEquals(mongoDatabase.getCollection("user").countDocuments(), 2);
     }
 
-    @Test(groups = "repository", expectedExceptions = MongoWriteException.class)
+    @Test(groups = "repository")
     public void testRunTwice() {
         testMongofly();
         testMongofly();

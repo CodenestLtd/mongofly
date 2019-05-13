@@ -17,7 +17,7 @@ apply plugin: "io.codearte.nexus-staging"
 
 group = "uk.codenest"
 archivesBaseName = "mongofly"
-version = "1.0.1.RELEASE"
+version = "1.0.2.RELEASE"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -74,10 +74,10 @@ uploadArchives {
 
             // Destination
             repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
+                authentication(userName: ossrhUsername == null ? "" : ossrhUsername, password: ossrhPassword == null ? "" : ossrhPassword)
             }
             snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
+                authentication(userName: ossrhUsername == null ? "" : ossrhUsername, password: ossrhPassword == null ? "" : ossrhPassword)
             }
 
             // Add required metadata to POM
