@@ -27,3 +27,8 @@ Hopefully this thing is routinely green. Travis-CI monitors new code to this pro
 
 ## License
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+
+##Release code
+```$xslt
+./gradlew clean build uploadArchives closeAndReleaseRepository
+```

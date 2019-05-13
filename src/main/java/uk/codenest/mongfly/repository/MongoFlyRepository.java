@@ -1,6 +1,7 @@
 package uk.codenest.mongfly.repository;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,7 +48,7 @@ public class MongoFlyRepository {
 
 
     private void configure() {
-        if (this.getMongoFlyCollection().countDocuments() == 0) {
+        if (!this.database.listCollectionNames().into(new ArrayList<>()).contains(collectionName)) {
             this.database.createCollection(collectionName);
             this.getMongoFlyCollection().createIndex(new BasicDBObject(ChangeSet.ChangeSetEnum.CHANGE_ID.getValue(), 1), new IndexOptions().unique(true));
         }
