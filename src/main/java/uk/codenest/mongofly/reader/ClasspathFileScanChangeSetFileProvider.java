@@ -1,13 +1,11 @@
 package uk.codenest.mongofly.reader;
 
-import java.io.File;
-import java.net.URISyntaxException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Slf4j
 public class ClasspathFileScanChangeSetFileProvider implements ChangeSetFileProvider {
@@ -19,16 +17,16 @@ public class ClasspathFileScanChangeSetFileProvider implements ChangeSetFileProv
     }
 
     @Override
-    public List<File> getChangeSetFiles() {
+    public List<Resource> getChangeSetFiles() {
         return this.getResourceFolderFiles(migrationFolder);
     }
 
-    private List<File> getResourceFolderFiles(final String folder) {
+    private List<Resource> getResourceFolderFiles(final String folder) {
         try {
-            Path path = Paths.get(getClass().getClassLoader().getResource(folder).toURI());
-            final File file = path.toFile();
-            return Arrays.asList(file.listFiles());
-        } catch (URISyntaxException e) {
+            PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+            Resource[] resources = resolver.getResources("classpath:" + folder + "/*.js");
+            return Arrays.asList(resources);
+        } catch (Exception e) {
             log.error("Failed to find migration folder", e);
             throw new RuntimeException(e.getCause());
         }

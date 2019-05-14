@@ -15,6 +15,7 @@ public class ExampleApplication {
     @Primary
     @Bean(initMethod = "process")
     public MongoFly mongoFly(MongoClient mongoClient) {
+
         return new MongoFly(mongoClient, "test");
     }
 

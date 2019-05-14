@@ -6,8 +6,8 @@ MongFly allows you to manage changes of your mongo documents and propagate these
 ```xml
 <dependency>
     <groupId>uk.codenest</groupId>
-	<artifactId>mongfly</artifactId>
-	<version>1.0.2.RELEASE</version>
+	<artifactId>mongofly</artifactId>
+	<version>1.0.3.RELEASE</version>
 </dependency>
 ```
 
@@ -17,7 +17,7 @@ Internal versions - https://oss.sonatype.org/content/groups/public
 
 
 ### Or download mongfly from
-repo1.maven.org - http://repo1.maven.org/maven2/uk/codenestltd/mongfly
+repo1.maven.org - http://repo1.maven.org/maven2/uk/codenest/mongofly
 
 ### Travis Continuous Integration Build Status
 
@@ -28,7 +28,7 @@ Hopefully this thing is routinely green. Travis-CI monitors new code to this pro
 ## License
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
 
-##Release code
+## Release code
 ```$xslt
 ./gradlew clean build uploadArchives closeAndReleaseRepository
 ```
