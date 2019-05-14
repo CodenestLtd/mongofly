@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import uk.codenest.mongofly.entity.ChangeSet;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.IndexOptions;
 import org.bson.Document;
+import uk.codenest.mongofly.entity.ChangeSet;
 
 public class MongoFlyRepository {
     private final MongoDatabase database;
@@ -30,9 +30,7 @@ public class MongoFlyRepository {
     }
 
     public void runScript(final String script) {
-        final BasicDBObject command = new BasicDBObject();
-        command.put("eval", script);
-        database.runCommand(command);
+        database.runCommand(new Document("$eval", script));
     }
 
     public void logChangeSet(final ChangeSet changeSet) {
